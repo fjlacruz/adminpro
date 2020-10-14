@@ -9,7 +9,8 @@ import { ShareModule } from 'src/app/share/share/share.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../../components/components/components.module';
 import { AccountSettingsComponent } from '../../pages/account-settings/account-settings.component';
-
+import { PromesasComponent } from '../../pages/promesas/promesas.component';
+import { RxjsComponent } from '../../pages/rxjs/rxjs.component';
 
 
 
@@ -18,7 +19,9 @@ import { AccountSettingsComponent } from '../../pages/account-settings/account-s
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    AccountSettingsComponent
+    AccountSettingsComponent,
+    PromesasComponent,
+    RxjsComponent
 
   ],
   exports: [DashboardComponent,

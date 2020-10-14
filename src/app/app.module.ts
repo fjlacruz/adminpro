@@ -10,15 +10,10 @@ import { AuthModule } from './auth/auth/auth.module';
 
 
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
     NopagefoundComponent,
-
-
-
   ],
   imports: [
     BrowserModule,
