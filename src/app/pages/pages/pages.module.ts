@@ -8,6 +8,7 @@ import { AppRoutingModule } from 'src/app/app-routing/app-routing.module';
 import { ShareModule } from 'src/app/share/share/share.module';
 import { FormsModule } from '@angular/forms';
 import { ComponentsModule } from '../../components/components/components.module';
+import { AccountSettingsComponent } from '../../pages/account-settings/account-settings.component';
 
 
 
@@ -17,13 +18,15 @@ import { ComponentsModule } from '../../components/components/components.module'
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
+    AccountSettingsComponent
 
   ],
   exports: [DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    CommonModule
+    CommonModule,
+
   ],
   imports: [CommonModule, ShareModule, AppRoutingModule, FormsModule, ComponentsModule]
 })
