@@ -6,31 +6,38 @@ import { Grafica1Component } from '../../pages/grafica1/grafica1.component';
 import { PagesComponent } from '../../pages/pages/pages.component';
 import { AppRoutingModule } from 'src/app/app-routing/app-routing.module';
 import { ShareModule } from 'src/app/share/share/share.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ComponentsModule } from '../../components/components/components.module';
 import { AccountSettingsComponent } from '../../pages/account-settings/account-settings.component';
 import { PromesasComponent } from '../../pages/promesas/promesas.component';
 import { RxjsComponent } from '../../pages/rxjs/rxjs.component';
-
-
+import { PerfilComponent } from '../../pages/perfil/perfil.component';
 
 @NgModule({
-  declarations: [DashboardComponent,
+  declarations: [
+    DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
     AccountSettingsComponent,
     PromesasComponent,
-    RxjsComponent
-
+    RxjsComponent,
+    PerfilComponent
   ],
-  exports: [DashboardComponent,
+  exports: [
+    DashboardComponent,
     ProgressComponent,
     Grafica1Component,
     PagesComponent,
-    CommonModule,
-
+    CommonModule
   ],
-  imports: [CommonModule, ShareModule, AppRoutingModule, FormsModule, ComponentsModule]
+  imports: [
+    CommonModule,
+    ShareModule,
+    AppRoutingModule,
+    FormsModule,
+    ComponentsModule,
+    ReactiveFormsModule
+  ]
 })
-export class PagesModule { }
+export class PagesModule {}
